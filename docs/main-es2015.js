@@ -654,7 +654,7 @@ let SimpleServiceService = class SimpleServiceService {
     }
     getWetherData(city, unit = "Default") {
         let promise = new Promise((resolve, reject) => {
-            let apiURL = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=' + unit + '&' + 'appid=' + this.apiKey;
+            let apiURL = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=' + unit + '&' + 'appid=' + this.apiKey;
             console.log(apiURL);
             this.http.get(apiURL)
                 .toPromise()

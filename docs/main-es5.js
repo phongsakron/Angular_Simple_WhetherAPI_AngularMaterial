@@ -1301,7 +1301,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           var unit = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "Default";
           var promise = new Promise(function (resolve, reject) {
-            var apiURL = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=' + unit + '&' + 'appid=' + _this2.apiKey;
+            var apiURL = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=' + unit + '&' + 'appid=' + _this2.apiKey;
             console.log(apiURL);
 
             _this2.http.get(apiURL).toPromise().then(function (res) {
