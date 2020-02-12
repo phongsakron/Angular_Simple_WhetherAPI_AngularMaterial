@@ -1,0 +1,25 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+.form-container {
+    width: fit-content;
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    padding: 2% 2% 2% 2%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10%;
+    z-index: 1;
+}
+
+.content-container {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto auto auto;
+    text-align: center;
+    align-items: center;
+}
